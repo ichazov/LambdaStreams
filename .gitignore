@@ -1,0 +1,13 @@
+# Files
+*.db
+*.log
+*.md
+*.xml
+*.class
+*.json
+*.iml
+
+# Folders
+bin/
+target/
+.idea/
