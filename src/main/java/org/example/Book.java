@@ -70,6 +70,6 @@ public class Book {
     }
     @Override
     public String toString() {
-        return "{Name: " + this.name + ", Price: " + this.price + "}"; //?
+        return "{Name: " + this.name + ", Price: " + this.price + "}";
     }
 }
