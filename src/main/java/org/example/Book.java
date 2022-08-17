@@ -31,19 +31,19 @@ public class Book {
                 .map(Book::getName)
                 .collect(Collectors.toList());
     }
-    public int totalPriceOfBooks (List<Book> books) {
+    public int totalPriceOfBooks(List<Book> books) {
         return books
                 .stream()
                 .map(Book::getPrice)
                 .reduce(0, Integer::sum);
     }
-    public List<Book> booksWithNameStartingWith (List<Book> books, String character) {
+    public List<Book> booksWithNameStartingWith(List<Book> books, String character) {
         return books
                 .stream()
                 .filter(book -> book.name.matches("(?i)" + character + ".*"))
                 .collect(Collectors.toList());
     }
-    public Book mostExpensiveBook (List<Book> books) {
+    public Book mostExpensiveBook(List<Book> books) {
         return books
                 .stream()
                 .max(Comparator.comparing(Book::getPrice))
