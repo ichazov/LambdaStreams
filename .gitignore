@@ -7,6 +7,9 @@
 *.json
 *.iml
 
+# But not
+!pom.xml
+
 # Folders
 bin/
 target/
